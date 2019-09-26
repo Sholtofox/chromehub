@@ -8,46 +8,18 @@ function App() {
         <img
           src="https://66.media.tumblr.com/b27ca2192e8881523be0ef9cc7e32727/tumblr_muqinkr95j1s9bsz2o5_250.png"/>
         <p>
-          <code>In here for the asdasdasbeginning</code>
+          <code>Extension being built! Come back soon ^-^</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <form
-          method="get"
-          title="Search Form"
-          action="https://cse.google.com/cse/publicurl"
-        >
-          <div>
-            <input
-              type="text"
-              id="q"
-              name="q"
-              title="Search this site"
-              alt="Search Text"
-              maxlength="256"
-            />
-            <input
-              type="hidden"
-              id="cx"
-              name="cx"
-              value="013626029654558379071:ze3tw4csia4"
-            />
-            <input
-              type="image"
-              id="searchSubmit"
-              name="submit"
-              src="https://www.flaticon.com/free-icon/active-search-symbol_34148"
-              alt="Go"
-              title="Submit Search Query"
-            />
-          </div>
-        </form>
+        <div>
+          <form method="get" title="Search Form" action="https://cse.google.com/cse/publicurl">
+            <div>
+              <input type="text" id="q" name="q" title="Search this site" alt="Search Text" maxlength="256" />
+              <input type="hidden" id="cx" name="cx" value="013626029654558379071:ze3tw4csia4" />
+              <input type="image" id="searchSubmit" name="submit" src="https://www.flaticon.com/free-icon/active-search-symbol_34148" alt="Go" title="Submit Search Query" />
+            </div>
+          </form>
+        </div>
+
       </header>
     </div>
   );
