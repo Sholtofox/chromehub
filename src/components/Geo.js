@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getGeoThunk } from "../store/Geo";
-
+import Weather from './Weather'
 class Geo extends Component {
 
     componentDidMount() {
@@ -9,10 +9,10 @@ class Geo extends Component {
     }
 
     render() {
-        console.log(this.props.Geo)
+        console.log(this.props.Geo.district)
         return (
             <div>
-                {this.props.Geo ? <p>{this.props.Geo.city}</p> : <p>getting there..</p>}
+                {this.props.Geo.district ? <Weather cityName={this.props.Geo.district} /> : <p>getting there..</p>}  
             </div>
         )
     }
