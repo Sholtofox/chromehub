@@ -16,7 +16,7 @@ class Weather extends Component {
     render() {
         console.log('in weather', this.props.Geo)
         return (
-            <div>
+            <div className="farts">
                 {this.props.weather.main && this.props.cityName? <div>
                     <p>It is {this.props.weather.main.temp}° in {this.props.weather.name}</p>
                     <p>Today, there will be a high of {this.props.weather.main.temp_max}° and a low of {this.props.weather.main.temp_min}°</p>
