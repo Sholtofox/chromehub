@@ -5,6 +5,7 @@ import axios from 'axios'
  */
 const GET_WEATHER = 'GET_WEATHER'
 
+
 /**
  * ACTION CREATORS
  */
@@ -13,6 +14,7 @@ const getWeather = weather => ({ type: GET_WEATHER, weather })
 /**
  * THUNK CREATORS
  */
+
 export const getWeatherThunk = (city) => {
     return async dispatch => {
         try {
@@ -40,6 +42,7 @@ export default function (state = initialState, action) {
     switch (action.type) {
         case GET_WEATHER:
             return action.weather
+
         default:
             return state
     }
