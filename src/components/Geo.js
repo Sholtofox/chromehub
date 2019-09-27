@@ -9,10 +9,10 @@ class Geo extends Component {
     }
 
     render() {
-        console.log(this.props.Geo.district)
+        console.log('in geo', this.props.Geo.district)
         return (
             <div>
-                {this.props.Geo.district ? <Weather cityName={this.props.Geo.district} /> : <p>getting there..</p>}  
+                {this.props.Geo.district ? <Weather cityName={this.props.Geo.city} /> : <p>getting there..</p>}  
             </div>
         )
     }

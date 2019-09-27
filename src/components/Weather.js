@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getWeatherThunk } from "../store/weather";
-import { getGeoThunk } from '../store/Geo'
-import Geo from '../components/Geo'
 
 class Weather extends Component {
     constructor(props) {
@@ -11,15 +9,15 @@ class Weather extends Component {
 
     componentDidMount() {
         // this.props.cityName ? this.props.getData(this.props.cityName) : this.props.getData('Washington')
-        this.props.getGeo()
-        this.props.getData(this.props.Geo.city)
+        // this.props.getGeo()
+        this.props.getData(this.props.cityName)
     }
 
     render() {
         console.log('in weather', this.props.Geo)
         return (
             <div>
-                {this.props.weather.main && this.props.Geo.city? <div>
+                {this.props.weather.main && this.props.cityName? <div>
                     <p>It is {this.props.weather.main.temp}° in {this.props.weather.name}</p>
                     <p>Today, there will be a high of {this.props.weather.main.temp_max}° and a low of {this.props.weather.main.temp_min}°</p>
                     <p>{}</p>
@@ -33,15 +31,12 @@ class Weather extends Component {
 const mapDispatchToProps = dispatch => ({
     getData: (city) => {
         dispatch(getWeatherThunk(city))
-    },
-    getGeo: () => {
-        dispatch(getGeoThunk())
     }
+
 })
 
 const mapStateToProps = state => ({
-    weather: state.weather,
-    Geo: state.Geo
+    weather: state.weather
 })
 
 const Weathers = connect(mapStateToProps, mapDispatchToProps)(Weather)
