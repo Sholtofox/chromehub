@@ -39,7 +39,7 @@ class News extends Component {
                           />
                         </div>
                         <p>{article.description}</p>
-                        <a href={article.url}>Link to Article</a>
+                        <a href={article.url} className="linkStyler">Link to Article</a>
                       </div>
                     );
                 })

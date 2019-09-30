@@ -42,7 +42,14 @@ a .fab:hover {
   padding: 10px;
   width: 100%;
   flex-direction: column;
-  
+
+}
+
+.linkStyler {
+    display: flex;
+    text-shadow: 0px 0px #ffffff;
+    justify-content: center
+
 }
 .weatherList p {
   display: flex;
@@ -54,7 +61,7 @@ a .fab:hover {
 .weblinks {
   display: flex;
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .weatherList {
@@ -82,6 +89,7 @@ a .fab:hover {
   padding: 10px;
   width: 100%;
   margin-top: 0.5%;
+  
 }
 
 .crypto {
@@ -97,12 +105,13 @@ a .fab:hover {
   border-bottom-style: dotted;
   width: 30%;
   border: 3px outset rgb(141, 151, 158);
-border-radius: 40px 40px 40px 40px;
+  border-radius: 10px 10px 10px 10px;
 }
 #singlenews {
 border: 3px outset rgb(141, 151, 158);
-border-radius: 40px 40px 40px 40px;
+border-radius: 10px 10px 10px 10px;
 padding: 3%;
+margin-bottom: 1%;
 }
 #titlePic {
   display: flex;
