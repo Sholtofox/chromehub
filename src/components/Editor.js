@@ -1,10 +1,11 @@
 import React from 'react'
 import { Editor } from 'slate-react'
 import Plain from 'slate-plain-serializer'
+import Clock from './Clock'
 
 const existingValue = localStorage.getItem('content')
 const initialValue = Plain.deserialize(
-    existingValue || 'A string of plain text.'
+    existingValue || 'Type Something!'
 )
 
 class Fart extends React.Component {
@@ -22,12 +23,16 @@ class Fart extends React.Component {
     }
 
     render() {
-        console.log(window.localStorage)
-        return( 
+        return (
+          <div className="middle">
+            <div>
+              <Clock />
+            </div>
             <div className="editor">
-                <Editor value={this.state.value} onChange={this.onChange} />
-            </div> 
-            )
+              <Editor value={this.state.value} onChange={this.onChange} />
+            </div>
+          </div>
+        );
     }
 }
 

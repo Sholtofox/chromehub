@@ -24,9 +24,9 @@ export default class Clock extends Component {
     }
     render() {
         return (
-            <p className="App-clock">
-                The time is {this.state.time}.
-      </p>
+          <div>
+            <p className="clocky">{this.state.time}</p>
+          </div>
         );
     }
 }
