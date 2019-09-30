@@ -18,7 +18,7 @@ export const getCryptoThunk = () => {
     return async dispatch => {
         try {
             const { data } = await axios.get(
-              "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=A6C5DDB1-541D-4065-8ACC-CF68B5CE4DB9"
+                "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=27AD348D-1B42-4D67-983F-03A78E5A49EF"
             );
             dispatch(getCrypto(data))
         } catch (error) {

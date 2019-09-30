@@ -13,7 +13,13 @@ class News extends Component {
     render() {
         console.log('on  props', this.props.News.articles)
         const sources = [
-          "NBC News", "The Wall Street Journal", "Bbc.com", "Fox News", "The New York Times"
+          "NBC News",
+          "The Wall Street Journal",
+          "Bbc.com",
+          "Fox News",
+          "The New York Times",
+          "Al Jazeera English",
+          "Nypost.com"
         ];
 
 
