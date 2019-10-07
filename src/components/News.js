@@ -31,11 +31,12 @@ class News extends Component {
                     return (
                       <div id="singlenews">
                         <div id="titlePic">
-                          <h1>{article.source.name}</h1>
+                          <h1 className="newsSource">{article.source.name}</h1>
                           <img
                             src={article.urlToImage}
                             height="35%"
                             width="35%"
+                            className="newsImg"
                           />
                         </div>
                         <p>{article.description}</p>
@@ -67,8 +68,3 @@ const NewsComp = connect(mapStateToProps, mapDispatchToProps)(News)
 export default NewsComp
 
 
-// const sources = [
-//     "Fox News",
-//     "NBC News",
-//     "Bbc.com"
-// ]

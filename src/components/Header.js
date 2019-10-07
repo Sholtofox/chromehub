@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Clock from './Clock'
 import Gpro from './Geo'
 import Editor from './Editor'
 import Crypto from './Crypto'

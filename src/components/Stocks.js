@@ -29,6 +29,7 @@ class Stocks extends Component {
                 <p> Exchange Rate: {nuts["5. Exchange Rate"]}</p>
                 <p> Price per dollar: {nuts["9. Ask Price"]}</p>
                 <p> Last Updated: {nuts["6. Last Refreshed"]}</p>
+
               </div>
             ) : (
               <p>getting there</p>
@@ -61,6 +62,11 @@ class Stocks extends Component {
               <p>
                 <a href="https://www.instagram.com">
                             <i class="fab fa-instagram"></i>
+                </a>
+              </p>
+              <p>
+                <a href="https://www.github.com">
+                        <i class="fab fa-github"></i>
                 </a>
               </p>
             </div>

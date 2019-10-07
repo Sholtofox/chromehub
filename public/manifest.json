@@ -6,7 +6,7 @@
     "newtab": "index.html"
   },
   "browser_action": {
-    "default_popup": "bindex.html",
+    "default_popup": "index.html",
     "default_title": "React Ext"
   },
   "version": "1.0"
