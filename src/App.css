@@ -26,6 +26,11 @@ html {
 .newsSource {
   font-size: 25px;
 }
+.editweather {
+  background-color: #3498db;
+  font-size: 15px;
+  border-radius: 10px;
+}
 .bindex {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
