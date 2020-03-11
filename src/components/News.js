@@ -45,7 +45,7 @@ class News extends Component {
                     );
                 })
               ) : (
-                <p>fart</p>
+                <p>loading</p>
               )}
             </div>
         );

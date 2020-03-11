@@ -20,7 +20,6 @@
 html {
   background-image: url("https://theexchange.africa/wp-content/uploads/2018/10/Japan-.jpg");
   background-attachment: fixed;
-
   color: white;
 }
 .newsSource {
@@ -63,7 +62,7 @@ a .fab:hover {
   transform: scale(1.5)
 }
 
-.farts {
+.info {
   display: flex;
   border-radius: 10px;
   justify-items: center;

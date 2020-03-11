@@ -46,7 +46,7 @@ class Weather extends Component {
   render() {
     // console.log("in weather", this.props.news);
     return (
-      <div className="farts">
+      <div className="info">
         {this.props.weather.main && this.props.cityName ? (
           <div className="weatherList">
             <p>

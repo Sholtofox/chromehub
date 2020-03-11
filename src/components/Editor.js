@@ -8,7 +8,7 @@ const initialValue = Plain.deserialize(
     existingValue || 'Type Something!'
 )
 
-class Fart extends React.Component {
+class EditorComp extends React.Component {
     state = {
         value: initialValue,
     }
@@ -36,4 +36,4 @@ class Fart extends React.Component {
     }
 }
 
-export default Fart
+export default EditorComp
