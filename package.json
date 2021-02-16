@@ -17,7 +17,7 @@
     "redux-thunk": "^2.3.0",
     "slate": "^0.47.8",
     "slate-react": "^0.22.9",
-    "systeminformation": "^4.14.8"
+    "systeminformation": "^5.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
